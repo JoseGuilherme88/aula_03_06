@@ -15,8 +15,8 @@
                 <div class="col-xs-6">
                     <form>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">nome</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                            <label for="exampleInputNome">nome</label>
+                            <input type="text" class="form-control" id="exampleInputNome" placeholder="nome">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">endereços</label>
@@ -35,17 +35,26 @@
                                             <input type="checkbox"> Ativo
                                         </label>
                                     </div>
-                                    <button type="button" class="btn btn-success">Success</button>
+                                    <button type="button" id="btn btn-cadastrar">Cadastrar</button>
                                 </label>
                             </label>
                         </div>
                     </form>
                 </div>
-
-
-
-
                 <div class="col-md-6">.col-md-6</div>
+
+                <script>
+                    console.log $('#btn-enviar').click(function(){
+                        if($('#input-nome').val()==(''){
+                            alert('preencha o nome')
+                            
+                        }
+                    })
+                </script>
+
+
+
+
             </div>
     </body>
 </html>
