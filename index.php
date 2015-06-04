@@ -15,12 +15,12 @@
                 <div class="col-xs-6">
                     <form>
                         <div class="form-group">
-                            <label for="exampleInputNome">nome</label>
-                            <input type="text" class="form-control" id="exampleInputNome" placeholder="nome">
+                            <label for="exampleInputEmail13">nome</label>
+                            <input type="text" class="form-control" id="exampleInputNome" placeholder="Nome">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">endereços</label>
-                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            <input type="text" class="form-control" id="input-endereco" placeholder="Enedereço">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail3">sexo</label>
@@ -49,6 +49,12 @@
                             alert('preencha o nome')
                             
                         }
+                    
+                    console.log $('#btn-enviar').click(function(){
+                        if($('#input-endereço').val()==(''){
+                            alert('preencha o endereço')}
+                    
+                    
                     })
                 </script>
 
